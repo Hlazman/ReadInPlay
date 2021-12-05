@@ -1,0 +1,12 @@
+.menuBtn {
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #673ab7;
+    border: none;
+}
+
+.menuBtn:hover {
+    background-color: #7e57c2;
+}

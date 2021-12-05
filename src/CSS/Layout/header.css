@@ -1,0 +1,19 @@
+.flex-container-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+.flex-items-header:nth-child(1) {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    align-self: center;
+    order: 0;
+    text-align: center;
+}
