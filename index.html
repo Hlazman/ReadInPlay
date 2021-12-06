@@ -15,13 +15,22 @@
             <h1 aria-label="The name of the book" id="bookName">BOOK NAME</h1>
         </div>
         <!--************************** MENU *******************************************-->
-        <div class="flex-items-header" aria-label="Menu">
-            <button id="menuBtn" class="menuBtn"><i class="fas fa-user-cog fa-lg" aria-hidden="true"></i></button>
-            <!--************************** SIDEBAR *******************************************-->
-            <div class="sidebar hide">
-
-            </div>
+        <div class="flex-items-header">
+            <button id="menuBtn" class="menuBtn" title="menu" aria-label="Open menu">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </button>
         </div>
+    </div>
+    <!--************************** SIDEBAR *******************************************-->
+    <div class="sidebar hide ">
+        <div class="menuHeading">
+            <h2> Menu </h2>
+            <button id="closeMenu" title="close menu" aria-label="close menu"> X</button>
+        </div>
+        <!--************************** NAVIGATION *******************************************-->
+        <nav role="navigation">
+
+        </nav>
     </div>
 </header>
 

@@ -1,9 +1,8 @@
 @import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import "./src/CSS/normilize.css";
 
-@import "src/CSS/Layout/header.css";
-@import "src/CSS/Menu/menu-button.css";
-@import "src/CSS/Menu/sidebar.css";
+@import "src/CSS/header.css";
+@import "src/CSS/sidebar.css";
 
 
 * {
@@ -14,10 +13,6 @@
 
 body {
     font-family: Arial, sans-serif;
-}
-
-#bookName {
-    font-size: 20px;
 }
 
 .hide {

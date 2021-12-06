@@ -1,0 +1,51 @@
+.sidebar {
+    background-color: #2B2E33;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: left;
+    width: 250px;
+    height: 100%;
+    z-index: 1111;
+    transition: transform .5s ease-in-out;
+    transform: translateX(250px);
+}
+
+/* To open and close sidebar with transition */
+.sidebarTransform {
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+}
+
+.menuHeading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #673ab7;
+    color: #FFFFFF;
+}
+
+.menuHeading h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menuHeading button {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    font-weight: 700;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-color: #fff;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+.menuHeading button:hover {
+    background-color: #7e57c2;
+}

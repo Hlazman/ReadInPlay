@@ -1,3 +1,4 @@
+/*HEADER CONTAINER */
 .flex-container-header {
     display: flex;
     flex-direction: row;
@@ -8,6 +9,7 @@
     box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
 }
 
+/*HEADER ITEM 1 */
 .flex-items-header:nth-child(1) {
     display: block;
     flex-grow: 1;
@@ -17,3 +19,22 @@
     order: 0;
     text-align: center;
 }
+
+#bookName {
+    font-size: 20px;
+}
+
+/* MENU BUTTON */
+.menuBtn {
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #673ab7;
+    border: none;
+}
+
+.menuBtn:hover {
+    background-color: #7e57c2;
+}
+
