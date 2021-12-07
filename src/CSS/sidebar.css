@@ -49,3 +49,40 @@
 .menuHeading button:hover {
     background-color: #7e57c2;
 }
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar ul button {
+    position: relative;
+    background-color: transparent;
+    color: #BAB5BD;
+    border: none;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar ul li button i {
+    margin-right: 10px;
+}
+
+.sidebar ul button:hover, .sidebar ul button:focus {
+    background-color: #161920;
+    color: #fff;
+}
+
+.sidebar ul button:hover::before, .sidebar ul button:focus::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #673ab7;
+    width: 4px;
+    height: 100%;
+}

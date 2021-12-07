@@ -18,3 +18,9 @@ body {
 .hide {
     visibility: hidden;
 }
+
+hr {
+    margin-top: 3px;
+    border-top: none;
+    border-bottom: 1px solid navajowhite;
+}
