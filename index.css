@@ -1,8 +1,9 @@
-@import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import "./src/CSS/normilize.css";
+@import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 @import "src/CSS/header.css";
 @import "src/CSS/sidebar.css";
+@import "src/CSS/modal.css";
 
 
 * {

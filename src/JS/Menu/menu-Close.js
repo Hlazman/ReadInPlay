@@ -2,7 +2,7 @@ const menuClose = () => {
     const sidebar = document.querySelector('.sidebar')
     const closeMenuBtn = document.querySelector('#closeMenu')
 
-    // CLOSE MENU TO CLICK OUTSIDE THE SIDEBAR
+    // ********** CLOSE MENU TO CLICK OUTSIDE THE SIDEBAR **********
     document.addEventListener('click', (e) => {
         let node = e.target;
         let inside = false;
@@ -21,7 +21,7 @@ const menuClose = () => {
         }
     });
 
-// CLOSE MENU TO CLICK ON BUTTON CLOSE
+// ********** CLOSE MENU TO CLICK ON BUTTON CLOSE **********
     closeMenuBtn.addEventListener('click', () => {
         sidebar.classList.remove('sidebarTransform')
         setTimeout(() => {
@@ -29,7 +29,7 @@ const menuClose = () => {
         }, 500)
     })
 
-    // CLOSE MENU TO CLICK ON ESC
+    // ********** CLOSE MENU TO CLICK ON ESC **********
     document.addEventListener('keydown', (e) => {
         if (e.key === "Escape") {
             if (!sidebar.classList.contains('hide')) {
