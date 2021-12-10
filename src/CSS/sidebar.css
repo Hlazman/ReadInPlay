@@ -46,7 +46,7 @@
     box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
 }
 
-.menuHeading button:hover {
+.menuHeading button:hover, .menuHeading button:focus {
     background-color: #7e57c2;
 }
 
