@@ -63,8 +63,8 @@
                     <hr>
                 </li>
                 <li>
-                    <button id="tools">
-                        <i class="fas fa-tools fa-lg" aria-hidden="true"></i> Tools
+                    <button id="settings">
+                        <i class="fas fa-tools fa-lg" aria-hidden="true"></i> Settings
                     </button>
                 </li>
                 <li>
@@ -159,17 +159,58 @@
         </div>
     </div>
 </section>
-<!--************************** TOOLS *******************************************-->
-<section id="toolsSection" class="modal hide">
-    <div id="toolsModalDialog" class="modal-dialog">
+<!--************************** SETTINGS *******************************************-->
+<section id="settingsSection" class="modal hide">
+    <div id="settingsModalDialog" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="toolsHeading" class="modal-title"> TOOLS </h2>
-                <button id="toolsModalCloseBtn"
-                        class="modalClose" title="close window Tools" aria-label="close window Tools"> X
+                <h2 id="settingsHeading" class="modal-title"> SETTINGS </h2>
+                <button id="settingsModalCloseBtn"
+                        class="modalClose" title="close window Settings" aria-label="close window Settings"> X
                 </button>
             </div>
             <div class="modal-body">
+                <!--************************** LANGUAGES *******************************************-->
+                <div class="flex-container-tools">
+                    <div class="flex-items-tools">
+                        <label id="labelLang" for="lang"
+                               title="Choose language" aria-label="Choose language" class="settingsLabel">
+                            <i class="fas fa-language fa-2x" aria-hidden="true"></i>
+                            <span id="LangHeading"> Language </span>
+                        </label>
+                        <select id="lang" class="settingsSelect">
+                            <option selected value="0"> English</option>
+                            <option value="1" lang="uk"> Українська</option>
+                            <option value="2" lang="ru"> Русский</option>
+                        </select>
+                    </div>
+                    <!--************************** THEME *******************************************-->
+                    <div class="flex-items-tools">
+                        <label id="labelThemes" for="themes"
+                               title="Choose Theme" aria-label="Choose Theme" class="settingsLabel">
+                            <i class="fas fa-palette fa-2x" aria-hidden="true"></i>
+                            <span id="themeHeading"> Theme</span>
+                        </label>
+                        <select id="themes" class="settingsSelect">
+                            <option id="light" selected value="Light">Light</option>
+                            <option id="dark" value="Dark">Dark</option>
+                        </select>
+                    </div>
+                    <!--************************** FONT *******************************************-->
+                    <div class="flex-items-tools">
+                        <label for="font"
+                               title="Choose font size" aria-label="Choose font size" class="settingsLabel">
+                            <i id="fontIcon" class="fas fa-font fa-2x" aria-hidden="true"></i>
+                            <span id="fontSizeHeading">Font size</span>
+                        </label>
+                        <input type="number" id="font" name="font" class="settingsInput" placeholder='17'
+                               min="13" max="140">
+                        <!--                        <div class="test">-->
+                        <button id="plusFont" class="btnFont"><i class="fas fa-plus"></i></button>
+                        <button id="minusFont" class="btnFont"><i class="fas fa-minus"></i></button>
+                        <!--                        </div>-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -204,6 +245,7 @@
         </div>
     </div>
 </section>
+
 
 </body>
 <script type="module" src="index.js"></script>

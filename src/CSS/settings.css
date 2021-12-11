@@ -1,0 +1,104 @@
+/* MODAL BODY CONTAINER */
+.flex-container-tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex-items-tools:nth-child(1) {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+.flex-items-tools:nth-child(2) {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+.flex-items-tools:nth-child(3) {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+/* SELECT DESIGN */
+.settingsSelect {
+    width: 100px;
+    height: 3em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* INPUT DESIGN */
+.settingsInput {
+    width: 100px;
+    height: 3em;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.settingsInput::placeholder {
+    color: #000000;
+    font-weight: 700;
+}
+
+/* HIDE ARROWS IN INPUT TYPE NUMBER & ARROW IN SELECT */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* PADDING, COLORS IN ICONS & TEXT */
+.settingsLabel {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    font-weight: 700;
+}
+
+.settingsLabel i, .settingsInput i {
+    padding-right: 15px;
+    color: #673ab7;
+}
+
+/* BUTTONS FONT SIZE */
+.btnFont {
+    height: 3em;
+    width: 40px;
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    margin-right: 3px;
+    border-radius: 5px;
+}
+
+.btnFont:hover, .btnFont:active, .btnFont:focus {
+    background-color: #673ab7;
+}
+
+.test {
+    display: flex;
+}

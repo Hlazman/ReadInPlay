@@ -56,16 +56,16 @@ const modal = () => {
     closeModalOutside(bookmarksModalDialog, bookmarksSection)
     closeModalESC(bookmarksSection)
 
-    // ********** TOOLS **********
-    const toolsBtn = document.querySelector('#tools')
-    const toolsSection = document.querySelector('#toolsSection')
-    const toolsModalDialog = document.querySelector('#toolsModalDialog')
-    const toolsModalCloseBtn = document.querySelector('#toolsModalCloseBtn')
+    // ********** SETTINGS **********
+    const settingsBtn = document.querySelector('#settings')
+    const settingsSection = document.querySelector('#settingsSection')
+    const settingsModalDialog = document.querySelector('#settingsModalDialog')
+    const settingsModalCloseBtn = document.querySelector('#settingsModalCloseBtn')
 
-    openModal(toolsBtn, toolsSection)
-    closeModal(toolsModalCloseBtn, toolsSection)
-    closeModalOutside(toolsModalDialog, toolsSection)
-    closeModalESC(toolsSection)
+    openModal(settingsBtn, settingsSection)
+    closeModal(settingsModalCloseBtn, settingsSection)
+    closeModalOutside(settingsModalDialog, settingsSection)
+    closeModalESC(settingsSection)
 
     // ********** INFORMATION **********
     const infoBtn = document.querySelector('#information')
