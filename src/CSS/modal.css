@@ -6,7 +6,6 @@
     left: 0;
     margin: 0;
     padding: 0;
-    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 300ms ease-in;
     pointer-events: none;
@@ -28,7 +27,6 @@
 .modal-content {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
     width: 90vw;
     height: 90vh;
     margin: 0 auto;

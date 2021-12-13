@@ -13,7 +13,6 @@
     align-items: baseline;
     width: 100%;
     padding: 20px;
-    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
 }
 
 .flex-items-tools:nth-child(2) {
@@ -21,7 +20,6 @@
     align-items: baseline;
     width: 100%;
     padding: 20px;
-    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
 }
 
 .flex-items-tools:nth-child(3) {
@@ -29,7 +27,6 @@
     align-items: center;
     width: 100%;
     padding: 20px;
-    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
 }
 
 /* SELECT DESIGN */
@@ -40,7 +37,12 @@
     text-align: center;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* CONTAINER FOR INPUT & BUTTONS */
+.fontGroup {
+    display: flex;
+    border-radius: 5px;
 }
 
 /* INPUT DESIGN */
@@ -51,12 +53,10 @@
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    box-shadow: 4px 2px 1px -3px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
 
 .settingsInput::placeholder {
-    color: #000000;
     font-weight: 700;
 }
 
@@ -67,7 +67,6 @@ input::-webkit-inner-spin-button {
     -moz-appearance: none;
     appearance: none;
 }
-
 input[type=number] {
     -moz-appearance: textfield;
 }
@@ -86,23 +85,16 @@ input[type=number] {
     color: #673ab7;
 }
 
-.fontGroup {
-    display: flex;
-    border-radius: 5px;
-    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.35);
-}
-
-/* BUTTONS FONT */
+/*BUTTONS +- IN SETTINGS*/
 .btnFont {
     height: 3em;
     width: 40px;
     background-color: transparent;
     color: #673ab7;;
     border: none;
-    box-shadow: 4px 2px 1px -3px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
 
 .btnFont:hover, .btnFont:active, .btnFont:focus {
-    color: #000000;;
+    color: #7e57c2;
 }
