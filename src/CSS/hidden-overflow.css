@@ -1,0 +1,18 @@
+.hide {
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}
+
+/*SCROLLBAR*/
+.scrollBarNone::-webkit-scrollbar {
+    display: none;
+}
+
+/*NOT SCROLL BODY WHEN OPEN MODAL */
+.stopScroll {
+    overflow: hidden;
+    /*position: fixed;*/
+}

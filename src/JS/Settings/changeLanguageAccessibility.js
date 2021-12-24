@@ -16,9 +16,11 @@ const changeLanguageAccessibility = () => {
     const labelFont = document.querySelector('#labelFont')
     const plusFont = document.querySelector('#plusFont')
     const minusFont = document.querySelector('#minusFont')
+    const resetFont = document.querySelector('#resetFont')
+    const labelScrollbarOFF = document.querySelector('label[for = scrollbarOFF]')
+    const labelScrollbarON = document.querySelector('label[for = scrollbarON]')
     const infoModalCloseBtn = document.querySelector('#infoModalCloseBtn')
     const contactModalCloseBtn = document.querySelector('#contactModalCloseBtn')
-
 
     lang.addEventListener('change', () => {
         // ENGLISH
@@ -50,6 +52,12 @@ const changeLanguageAccessibility = () => {
             plusFont.title = 'make the font bigger'
             minusFont.ariaLabel = 'make the font smaller'
             minusFont.title = 'make the font smaller'
+            resetFont.ariaLabel = 'make the font size default'
+            resetFont.title = 'make the font size default'
+            labelScrollbarOFF.ariaLabel = 'disable scrollbar'
+            labelScrollbarOFF.title = 'disable scrollbar'
+            labelScrollbarON.ariaLabel = 'enable scrollbar'
+            labelScrollbarON.title = 'enable scrollbar'
             infoModalCloseBtn.ariaLabel = 'close window Information'
             infoModalCloseBtn.title = 'close window Information'
             contactModalCloseBtn.ariaLabel = 'close window Contact us'
@@ -84,6 +92,12 @@ const changeLanguageAccessibility = () => {
             plusFont.title = 'збільшити шрифт'
             minusFont.ariaLabel = 'зменшити шрифт'
             minusFont.title = 'зменшити шрифт'
+            resetFont.ariaLabel = 'зробити розмір шрифту за замовчуванням'
+            resetFont.title = 'зробити розмір шрифту за замовчуванням'
+            labelScrollbarOFF.ariaLabel = 'вимкнути смугу прокрутки'
+            labelScrollbarOFF.title = 'вимкнути смугу прокрутки'
+            labelScrollbarON.ariaLabel = 'увімкнути смугу прокрутки'
+            labelScrollbarON.title = 'увімкнути смугу прокрутки'
             infoModalCloseBtn.ariaLabel = 'закрити вікно Інформація'
             infoModalCloseBtn.title = 'закрити вікно Інформація'
             contactModalCloseBtn.ariaLabel = 'закрити вікно Контакти'
@@ -118,6 +132,12 @@ const changeLanguageAccessibility = () => {
             plusFont.title = 'Увеличить шрифт'
             minusFont.ariaLabel = 'Уменьшить шрифт'
             minusFont.title = 'Уменьшить шрифт'
+            resetFont.ariaLabel = 'установить размер шрифта по умолчанию'
+            resetFont.title = 'установить размер шрифта по умолчанию'
+            labelScrollbarOFF.ariaLabel = 'отключить полосу прокрутки'
+            labelScrollbarOFF.title = 'отключить полосу прокрутки'
+            labelScrollbarON.ariaLabel = 'включить полосу прокрутки'
+            labelScrollbarON.title = 'включить полосу прокрутки'
             infoModalCloseBtn.ariaLabel = 'закрыть окно Информация'
             infoModalCloseBtn.title = 'закрыть окно Информация'
             contactModalCloseBtn.ariaLabel = 'закрыть окно Контакты'

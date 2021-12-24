@@ -3,14 +3,13 @@ const changeTheme = () => {
     const theme = document.querySelector('#themes')
     const dataTheme = document.querySelectorAll('[data-theme]');
 
-    const header = document.querySelector('.flex-container-header')
+    const scrollbar = document.querySelector('body')
+    const headerContainer = document.querySelector('.flex-container-header')
     const modal = document.querySelectorAll('.modal')
     const flexItemsTools = document.querySelectorAll('.flex-items-tools')
     const settingsSelect = document.querySelectorAll('.settingsSelect')
-    const fontGroup = document.querySelector('.fontGroup')
-    const inputFont = document.querySelector('#font')
-    const btnFont = document.querySelectorAll('.btnFont')
-
+    const divSettingsGroup = document.querySelectorAll('.divSettingsGroup')
+    const dataThemeBorder = document.querySelectorAll('[data-border]');
 
     theme.addEventListener('change', () => {
 // ****************************** DARK THEME  ******************************
@@ -19,9 +18,13 @@ const changeTheme = () => {
                 item.classList.remove('light')
                 item.classList.add('dark')
             })
+            // SCROLLBAR
+            scrollbar.classList.remove('scrollBar-light')
+            scrollbar.classList.add('scrollBar-dark')
+
             // HEADER
-            header.classList.remove('header-light')
-            header.classList.add('header-dark')
+            headerContainer.classList.remove('header-light')
+            headerContainer.classList.add('header-dark')
 
             // MODAL
             modal.forEach((item) => {
@@ -42,17 +45,15 @@ const changeTheme = () => {
             })
 
             // CONTAINER FOR INPUT & BUTTONS
-            fontGroup.classList.remove('fontGroup-light')
-            fontGroup.classList.add('fontGroup-dark')
+            divSettingsGroup.forEach((item) => {
+                item.classList.remove('divSettingsGroup-light')
+                item.classList.add('divSettingsGroup-dark')
+            })
 
-            // INPUT IN SETTINGS
-            inputFont.classList.remove('settingsInput-light')
-            inputFont.classList.add('settingsInput-dark')
-
-            // BUTTONS +- IN SETTINGS
-            btnFont.forEach((item) => {
-                item.classList.remove('btnFont-light')
-                item.classList.add('btnFont-dark')
+            // BORDER INPUT AND BUTTONS (FONT/SCROLLBAR) SETTINGS
+            dataThemeBorder.forEach((item) => {
+                item.classList.remove('btnBorder-light')
+                item.classList.add('btnBorder-dark')
             })
         }
 
@@ -63,9 +64,13 @@ const changeTheme = () => {
                 item.classList.add('light')
             })
 
+            // SCROLLBAR
+            scrollbar.classList.remove('scrollBar-dark')
+            scrollbar.classList.add('scrollBar-light')
+
             // HEADER
-            header.classList.remove('header-dark')
-            header.classList.add('header-light')
+            headerContainer.classList.remove('header-dark')
+            headerContainer.classList.add('header-light')
 
             // MODAL
             modal.forEach((item) => {
@@ -86,17 +91,15 @@ const changeTheme = () => {
             })
 
             // CONTAINER FOR INPUT & BUTTONS
-            fontGroup.classList.remove('fontGroup-dark')
-            fontGroup.classList.add('fontGroup-light')
+            divSettingsGroup.forEach((item) => {
+                item.classList.remove('divSettingsGroup-dark')
+                item.classList.add('divSettingsGroup-light')
+            })
 
-            // INPUT IN SETTINGS
-            inputFont.classList.remove('settingsInput-dark')
-            inputFont.classList.add('settingsInput-light')
-
-            // BUTTONS +- IN SETTINGS
-            btnFont.forEach((item) => {
-                item.classList.remove('btnFont-dark')
-                item.classList.add('btnFont-light')
+            // FONT BUTTONS IN SETTINGS
+            dataThemeBorder.forEach((item) => {
+                item.classList.remove('btnBorder-dark')
+                item.classList.add('btnBorder-light')
             })
         }
     })

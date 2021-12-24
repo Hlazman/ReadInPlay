@@ -1,10 +1,13 @@
+const sidebar = document.querySelector('.sidebar')
+const body = document.querySelector("body")
+
 // ********** FUNCTION OPEN MODAL **********
 const openModal = (btn, section) => {
     btn.addEventListener('click', () => {
         section.classList.remove('hide')
         section.classList.add('modal-target')
-        const sidebar = document.querySelector('.sidebar')
         sidebar.classList.remove('sidebarTransform')
+        body.classList.add('stopScroll')
         setTimeout(() => {
             sidebar.classList.add('hide')
         }, 500)
@@ -14,6 +17,7 @@ const openModal = (btn, section) => {
 const closeModal = (btn, section) => {
     btn.addEventListener('click', () => {
         section.classList.remove('modal-target')
+        body.classList.remove('stopScroll')
         setTimeout(() => {
             section.classList.add('hide')
         }, 300)
@@ -24,6 +28,7 @@ const closeModalOutside = (clicked, section) => {
     clicked.addEventListener('click', (e) => {
         if (e.target === clicked) {
             section.classList.remove('modal-target')
+            body.classList.remove('stopScroll')
             setTimeout(() => {
                 section.classList.add('hide')
             }, 300)
@@ -36,6 +41,7 @@ const closeModalESC = (section) => {
         if (e.key === "Escape") {
             if (!section.classList.contains('hide')) {
                 section.classList.remove('modal-target')
+                body.classList.remove('stopScroll')
                 setTimeout(() => {
                     section.classList.add('hide')
                 }, 300)

@@ -1,0 +1,56 @@
+/*************************** LIGHT ********************************************/
+.light {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/*SCROLLBAR*/
+.scrollBar-light::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollBar-light::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.scrollBar-light::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/*HEADER*/
+.header-light {
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+/*MODAL*/
+.modal-light {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*ITEMS IN MODAL*/
+.flex-items-tools-light {
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+/*SELECT IN SETTINGS*/
+.settingsSelect-light {
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* CONTAINER  FOR INPUTS AND BUTTONS*/
+.divSettingsGroup-light {
+    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.35);
+}
+
+/*BORDER INPUT AND BUTTONS (FONT/SCROLLBAR) SETTINGS*/
+.btnBorder-light {
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 4px 2px 1px -3px rgba(0, 0, 0, 0.35);
+}

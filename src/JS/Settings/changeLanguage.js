@@ -31,6 +31,10 @@ const changeLanguage = () => {
     const light = document.querySelector('#light')
     const dark = document.querySelector('#dark')
     const fontSizeHeading = document.querySelector('#fontSizeHeading')
+    const fontSizeReset = document.querySelector('#resetFont')
+    const scrollbarOnOffHeading = document.querySelector('#scrollbarOnOffHeading')
+    const labelScrollbarOFF = document.querySelector('label[for = scrollbarOFF]')
+    const labelScrollbarON = document.querySelector('label[for = scrollbarON]')
     // ****************************** INFORMATION  ******************************
     const infoHeading = document.querySelector('#infoHeading')
     // ****************************** CONTACT  ******************************
@@ -62,6 +66,10 @@ const changeLanguage = () => {
             light.textContent = 'Light'
             dark.textContent = 'Dark'
             fontSizeHeading.textContent = 'Font size'
+            fontSizeReset.textContent = 'Reset'
+            scrollbarOnOffHeading.textContent = 'Scrollbar'
+            labelScrollbarOFF.textContent = 'OFF'
+            labelScrollbarON.textContent = 'ON'
             infoHeading.textContent = 'INFORMATION'
             contactHeading.textContent = 'CONTACT US'
         }
@@ -89,6 +97,10 @@ const changeLanguage = () => {
             light.textContent = 'Світла'
             dark.textContent = 'Темна'
             fontSizeHeading.textContent = 'Розмір шрифту'
+            fontSizeReset.textContent = 'Скинути'
+            scrollbarOnOffHeading.textContent = 'Смуга прокрутки'
+            labelScrollbarOFF.textContent = 'НІ'
+            labelScrollbarON.textContent = 'ТАК'
             infoHeading.textContent = 'ІНФОРМАЦІЯ'
             contactHeading.textContent = "КОНТАКТИ"
         }
@@ -116,6 +128,10 @@ const changeLanguage = () => {
             light.textContent = 'Светлая'
             dark.textContent = 'Темная'
             fontSizeHeading.textContent = 'Размер шрифта'
+            fontSizeReset.textContent = 'Сброс'
+            scrollbarOnOffHeading.textContent = 'Полоса прокрутки'
+            labelScrollbarOFF.textContent = 'НЕТ'
+            labelScrollbarON.textContent = 'ДА'
             infoHeading.textContent = 'ИНФОРМАЦИЯ'
             contactHeading.textContent = 'КОНТАКТЫ'
         }

@@ -8,30 +8,16 @@
     align-content: flex-start;
 }
 
-.flex-items-tools:nth-child(1) {
+.flex-items-tools:nth-child(-n+10) {
     display: flex;
     align-items: baseline;
-    width: 100%;
-    padding: 20px;
-}
-
-.flex-items-tools:nth-child(2) {
-    display: flex;
-    align-items: baseline;
-    width: 100%;
-    padding: 20px;
-}
-
-.flex-items-tools:nth-child(3) {
-    display: flex;
-    align-items: center;
     width: 100%;
     padding: 20px;
 }
 
 /* SELECT DESIGN */
 .settingsSelect {
-    width: 150px;
+    width: 155px;
     height: 3em;
     cursor: pointer;
     text-align: center;
@@ -39,39 +25,7 @@
     border-radius: 5px;
 }
 
-/* CONTAINER FOR INPUT & BUTTONS */
-.fontGroup {
-    display: flex;
-    border-radius: 5px;
-}
-
-/* INPUT DESIGN */
-.settingsInput {
-    width: 70px;
-    height: 3em;
-    text-align: center;
-    border: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    cursor: pointer;
-}
-
-.settingsInput::placeholder {
-    font-weight: 700;
-}
-
-/* HIDE ARROWS IN INPUT TYPE NUMBER ARROW */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-/* LABELS ICONS TEXT */
+/* LABELS/DIV ICONS TEXT */
 .settingsLabel {
     display: flex;
     align-items: end;
@@ -85,16 +39,44 @@ input[type=number] {
     color: #673ab7;
 }
 
-/*BUTTONS +- IN SETTINGS*/
+/* CONTAINER  FOR INPUTS AND BUTTONS*/
+.divSettingsGroup {
+    display: flex;
+    border-radius: 5px;
+}
+
+/*FONT BUTTONS (PLUS/MINUS/RESET) IN SETTINGS*/
 .btnFont {
     height: 3em;
     width: 40px;
     background-color: transparent;
-    color: #673ab7;;
     border: none;
     cursor: pointer;
 }
 
+.btnFontReset {
+    width: 75px;
+}
+
 .btnFont:hover, .btnFont:active, .btnFont:focus {
-    color: #7e57c2;
+    color: #673ab7;
+}
+
+/* SCROLLBAR (OFF/ON) */
+.scrollbarRadioLabel {
+    width: 75px;
+    height: 40px;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.divSettingsGroup input[type=radio]:checked + label {
+    color: #673ab7;
+    font-weight: 700;
+}
+
+.divSettingsGroup input[type=radio]:not(checked) + label {
+    color: #808080;
 }

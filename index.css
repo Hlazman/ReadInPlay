@@ -1,8 +1,11 @@
 @import "./src/CSS/normilize.css";
 @import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
-@import "src/CSS/theme.css";
+@import "src/CSS/Themes/light.css";
+@import "src/CSS/Themes/dark.css";
 @import "src/CSS/header.css";
+@import "src/CSS/progresBar.css";
+@import "src/CSS/hidden-overflow.css";
 @import "src/CSS/sidebar.css";
 @import "src/CSS/modal.css";
 @import "src/CSS/settings.css";
@@ -18,12 +21,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.hide {
-    visibility: hidden;
-}
-
 hr {
     margin-top: 3px;
     border-top: none;
     border-bottom: 1px solid navajowhite;
 }
+
