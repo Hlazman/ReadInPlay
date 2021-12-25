@@ -10,28 +10,25 @@
 
 .flex-items-tools:nth-child(-n+10) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
     padding: 20px;
 }
 
 /* SELECT DESIGN */
 .settingsSelect {
-    width: 155px;
-    height: 3em;
-    cursor: pointer;
-    text-align: center;
     border: none;
     border-radius: 5px;
+    padding: 20px 20px;
+    cursor: pointer;
 }
 
 /* LABELS/DIV ICONS TEXT */
 .settingsLabel {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     align-items: end;
-    width: 150px;
-    font-weight: 700;
-    margin-right: 5px;
 }
 
 .settingsLabel i, .settingsInput i {
@@ -47,15 +44,12 @@
 
 /*FONT BUTTONS (PLUS/MINUS/RESET) IN SETTINGS*/
 .btnFont {
-    height: 3em;
-    width: 40px;
+    /*height: 3em;*/
+    width: fit-content;
+    padding: 15px 13px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-}
-
-.btnFontReset {
-    width: 75px;
 }
 
 .btnFont:hover, .btnFont:active, .btnFont:focus {
@@ -64,10 +58,9 @@
 
 /* SCROLLBAR (OFF/ON) */
 .scrollbarRadioLabel {
-    width: 75px;
-    height: 40px;
+    width: fit-content;
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 24px;
     text-align: center;
     cursor: pointer;
 }

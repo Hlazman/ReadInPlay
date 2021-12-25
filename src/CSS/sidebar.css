@@ -9,6 +9,7 @@
     z-index: 1111;
     transition: transform .5s ease-in-out;
     transform: translateX(250px);
+    overflow: auto;
 }
 
 /* To open and close sidebar with transition */
@@ -31,7 +32,6 @@
     display: inline-block;
     margin: 0;
     padding: 0;
-    font-size: 20px;
     font-weight: 400;
 }
 
@@ -63,8 +63,9 @@
     border: none;
     width: 100%;
     padding: 15px 20px;
-    font-size: 16px;
+    /*font-size: 17px;*/
     text-align: left;
+    word-break: break-all;
     cursor: pointer;
 }
 

@@ -7,6 +7,7 @@ import {changeLanguageAccessibility} from "./src/JS/Settings/changeLanguageAcces
 import {changeTheme} from "./src/JS/Settings/changeTheme.js";
 import {progressBar} from "./src/JS/Visual-Components/progressBar.js";
 import {showOffScrollbar} from "./src/JS/Settings/show-off-Scrollbar.js";
+import {changeFontSize} from "./src/JS/Settings/changeFontSize.js";
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -18,5 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
     changeLanguage()
     changeLanguageAccessibility()
     changeTheme()
+    changeFontSize()
     showOffScrollbar()
 })
