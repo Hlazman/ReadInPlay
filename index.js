@@ -9,6 +9,9 @@ import {progressBar} from "./src/JS/Visual-Components/progressBar.js";
 import {showOffScrollbar} from "./src/JS/Settings/show-off-Scrollbar.js";
 import {changeFontSize} from "./src/JS/Settings/changeFontSize.js";
 
+
+import {toast} from "./src/JS/Visual-Components/toast.js";
+
 window.addEventListener('DOMContentLoaded', () => {
 
     observerSidebar()
@@ -21,4 +24,18 @@ window.addEventListener('DOMContentLoaded', () => {
     changeTheme()
     changeFontSize()
     showOffScrollbar()
+
+
+    document.querySelector('#testBtn').addEventListener('click', () => {
+        if (document.querySelector('#lang').selectedIndex === 0) {
+            toast('Английский язык')
+        }
+        if (document.querySelector('#lang').selectedIndex === 1) {
+            toast('Українська мова')
+        }
+        if (document.querySelector('#lang').selectedIndex === 2) {
+            toast('Русский язык')
+        }
+    })
+
 })

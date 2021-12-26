@@ -3,6 +3,7 @@
 
 @import "src/CSS/Themes/light.css";
 @import "src/CSS/Themes/dark.css";
+@import "src/CSS/toast.css";
 @import "src/CSS/header.css";
 @import "src/CSS/progresBar.css";
 @import "src/CSS/hidden-overflow.css";
