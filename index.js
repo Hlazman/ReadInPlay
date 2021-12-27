@@ -27,15 +27,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     document.querySelector('#testBtn').addEventListener('click', () => {
-        if (document.querySelector('#lang').selectedIndex === 0) {
-            toast('Английский язык')
-        }
-        if (document.querySelector('#lang').selectedIndex === 1) {
-            toast('Українська мова')
-        }
-        if (document.querySelector('#lang').selectedIndex === 2) {
-            toast('Русский язык')
-        }
+        toast('Bookmark',
+            'Есть закладка',
+            'Є закладка')
     })
 
 })

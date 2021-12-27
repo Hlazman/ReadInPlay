@@ -13,6 +13,6 @@ const toast = (messageEN, messageUA, messageRU) => {
     toastMessage.classList.add('show')
     setTimeout(() => {
         toastMessage.classList.remove('show')
-    }, 3000)
+    }, 1500)
 }
 export {toast}
