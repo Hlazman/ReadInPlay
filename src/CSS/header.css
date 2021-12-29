@@ -14,8 +14,8 @@ header {
     align-content: stretch;
 }
 
-/*HEADER ITEM 1 */
-.flex-items-header:nth-child(1) {
+/*HEADER ITEM 2 */
+.flex-items-header:nth-child(2) {
     display: block;
     flex-grow: 1;
     flex-shrink: 1;
@@ -25,6 +25,23 @@ header {
     text-align: center;
 }
 
+/* BOOKMARK BUTTON */
+.bookmarkBtn {
+    padding: 5px;
+    margin: 5px;
+    width: 40px;
+    height: 80%;
+    border: none;
+    background-color: transparent;
+    color: #673ab7;
+    cursor: pointer;
+}
+
+.bookmarkBtn:hover {
+    color: #7e57c2;
+}
+
+/* BOOK NAME */
 #bookName {
     font-size: 20px;
 }

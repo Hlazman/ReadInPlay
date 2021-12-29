@@ -28,4 +28,20 @@ hr {
     border-bottom: 1px solid navajowhite;
 }
 
+main {
+    margin-top: 50px;
+}
 
+.story {
+    white-space: pre-wrap;
+}
+
+#saved {
+    visibility: hidden;
+    color: green;
+}
+
+#content {
+    width: 60%;
+    margin: auto;
+}

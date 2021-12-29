@@ -3,6 +3,7 @@ const changeLanguageAccessibility = () => {
     const lang = document.querySelector('#lang')
 
     const bookName = document.querySelector('#bookName')
+    const bookmarkBtn = document.querySelector('#bookmarkBtn')
     const menuBtn = document.querySelector('#menuBtn')
     const closeMenu = document.querySelector('#closeMenu')
     const characterModalCloseBtn = document.querySelector('#characterModalCloseBtn')
@@ -26,6 +27,8 @@ const changeLanguageAccessibility = () => {
         // ENGLISH
         if (lang.selectedIndex === 0) {
             bookName.ariaLabel = 'The name of the book'
+            bookmarkBtn.ariaLabel = 'Made bookmark'
+            bookmarkBtn.title = 'Made bookmark'
             menuBtn.ariaLabel = 'Open menu'
             menuBtn.title = 'Open menu'
             closeMenu.ariaLabel = 'close menu'
@@ -66,6 +69,8 @@ const changeLanguageAccessibility = () => {
         // UKRAINIAN
         if (lang.selectedIndex === 1) {
             bookName.ariaLabel = 'Назва книги'
+            bookmarkBtn.ariaLabel = 'Зробити закладку'
+            bookmarkBtn.title = 'Зробити закладку'
             menuBtn.ariaLabel = 'Відкрити меню'
             menuBtn.title = 'Відкрити меню'
             closeMenu.ariaLabel = 'Закрити меню'
@@ -106,6 +111,8 @@ const changeLanguageAccessibility = () => {
         // RUSSIAN
         if (lang.selectedIndex === 2) {
             bookName.ariaLabel = 'Название книги'
+            bookmarkBtn.ariaLabel = 'Сделать закладку'
+            bookmarkBtn.title = 'Сделать закладку'
             menuBtn.ariaLabel = 'Открыть меню'
             menuBtn.title = 'Открыть меню'
             closeMenu.ariaLabel = 'Закрыть меню'

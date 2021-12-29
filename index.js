@@ -9,8 +9,7 @@ import {progressBar} from "./src/JS/Visual-Components/progressBar.js";
 import {showOffScrollbar} from "./src/JS/Settings/show-off-Scrollbar.js";
 import {changeFontSize} from "./src/JS/Settings/changeFontSize.js";
 
-
-import {toast} from "./src/JS/Visual-Components/toast.js";
+import {addBookmark} from "./src/JS/Bookmark/addBookmark.js";
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -25,11 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     changeFontSize()
     showOffScrollbar()
 
-
-    document.querySelector('#testBtn').addEventListener('click', () => {
-        toast('Bookmark',
-            'Есть закладка',
-            'Є закладка')
-    })
+    addBookmark()
 
 })
